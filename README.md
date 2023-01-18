@@ -30,7 +30,7 @@ View: <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/initial_sta
 ### Relational Database diagram
 ![worldcup diagram](https://github.com/z-bj/fifa_world_cup_DB/blob/master/assets_fwc_db/FIFA_WORLD_CUP_DCM_DB.jpg)
 
-## Automating data insertion and querying with SQL
+## Using a shell script to insert and query data in a PostgreSQL DB 
 Created a Bash script that reads the games.csv data and uses SQL query commands to insert the data automatically into the tables previously created.
 
 Took constraints into consideration when creating the Bash script to insert all winner and opponent teams individually into 'teams' and then into 'games' based on the team_id created.
