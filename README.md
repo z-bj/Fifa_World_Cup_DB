@@ -27,7 +27,7 @@ Tables:
 View: <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/initial_state_of_DB.sql"> initial_tables_creation.sql
   </a>
 
-### Relational Database diagram
+### Simplified Data Conceptual Model (DCM) of the DB
 ![worldcup diagram](https://github.com/z-bj/fifa_world_cup_DB/blob/master/assets_fwc_db/FIFA_WORLD_CUP_DCM_DB.jpg)
 
 ## Using a shell script to insert and query data in a PostgreSQL DB 
