@@ -35,7 +35,7 @@ Created a Bash script that reads the games.csv data and uses SQL query commands 
 
 Took constraints into consideration when creating the Bash script to insert all winner and opponent teams individually into 'teams' and then into 'games' based on the team_id created.
 
-View: <a href="https://https://github.com/z-bj/fifa_world_cup_DB/blob/master/insert_data.sh"> insert_data.sh
+View: <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/insert_data.sh"> insert_data.sh
   </a>
   
 Finished by writing a Bash script that utilises SQL to query the database and obtain useful values.
