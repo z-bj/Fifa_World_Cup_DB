@@ -7,7 +7,7 @@
 
 
 # Goal!!!
-Create a Bash script that enters information from World Cup games.csv file into PostgreSQL, then query the database for useful statistics.
+⤷ Create a Bash script that enters information from World Cup games.csv file into PostgreSQL, then query the database for useful statistics.
 
 
 ## DataBase Building
@@ -15,9 +15,9 @@ Create a Bash script that enters information from World Cup games.csv file into 
 ### Dataset:  <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/games.csv"> games.csv </a>
 
 
-Created the database, 'worldcup', and the appropriate tables ('teams' and 'games') on PostgreSQL to visualise the data from games.csv.
+- Build the DB, 'worldcup', and the tables ('teams' and 'games') on PostgreSQL to visualise data from games.csv.
 
-Added appropriate constraints (primary keys and foreign keys) required to relate the tables.
+- Added constraints (primary keys and foreign keys) required to relate the tables.
 
 Tables:
 - 'games' tracks all matches and scores made by both the winner team and the opponent team (using team_id as the identifier).
@@ -31,7 +31,7 @@ Tables:
 
 ## PostgreSQL data querying through bash script. 
 
-Created a Bash script that reads the games.csv data and uses SQL query commands to insert the data automatically into the tables previously created.
+The script reads games.csv and calls the DB to insert all its content automatically in the waiting table.
 
 Took constraints into consideration when creating the Bash script to insert all winner and opponent teams individually into 'teams' and then into 'games' based on the team_id created.
 
@@ -43,7 +43,7 @@ Finished by writing a Bash script that utilises SQL to query the database and ob
 ### <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/queries.sh"> queries.sh
   </a>
 
-Database dump (after inserting data): <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/worldcup.sql"> worldcup.sql </a>
+DB dump (post insertion): <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/worldcup.sql"> worldcup.sql </a>
 
 
 
