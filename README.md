@@ -16,6 +16,10 @@ Create a Bash script that enters information from World Cup games.csv file into 
 
 Dataset:  <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/games.csv"> games.csv </a>
 
+``` csv
+
+```
+
 Created the database, 'worldcup', and the appropriate tables ('teams' and 'games') on PostgreSQL to visualise the data from games.csv.
 
 Added appropriate constraints (primary keys and foreign keys) required to relate the tables.
