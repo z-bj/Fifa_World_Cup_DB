@@ -1,53 +1,56 @@
-
-
-
 ![Qatar_2022_banner](https://github.com/z-bj/fifa_world_cup_DB/blob/master/assets_fwc_db/fifa_world_cup_db.png)
 
 ![vim](https://img.shields.io/badge/Vim-019733.svg?style=for-the-badge&logo=Vim&logoColor=white)![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)![postgreSQL](https://camo.githubusercontent.com/281c069a2703e948b536500b9fd808cb4fb2496b3b66741db4013a2c89e91986/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f737467726553514c2d3331363139323f7374796c653d666f722d7468652d6261646765266c6f676f3d706f737467726573716c266c6f676f436f6c6f723d7768697465)![image](https://img.shields.io/badge/FIFA-B7312F?style=for-the-badge&logo=fifa&logoColor=white)
 
 
-# Goal!!!
-⤷ Create a Bash script that enters information from World Cup games.csv file into PostgreSQL, then query the database for useful statistics.
+
+PostgreSQL database that stores information on all World Cup games played, along with a Bash script for inserting data into the database and another script for querying the database.
+
+## Goal
+
+The goal of this project is to create a Bash script that can enter information from the World Cup games.csv file into the PostgreSQL database, and then query the database for useful statistics.
+
+## Dataset
+
+The data used in this project is sourced from the [games.csv](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/games.csv) file available in this repository.
 
 
-## DataBase Building
 
-### Dataset:  <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/games.csv"> games.csv </a>
+## Database Building
 
+The PostgreSQL database called 'worldcup' was created to store the data from games.csv. It contains two tables - 'games' and 'teams'. Primary and foreign keys were added as constraints to relate the tables.
 
-- Build the DB, 'worldcup', and the tables ('teams' and 'games') on PostgreSQL to visualise data from games.csv.
+The 'games' table tracks all matches and scores made by both the winner team and the opponent team using the team_id as the identifier. The 'teams' table lists all teams that played in the matches.
 
-- Added constraints (primary keys and foreign keys) required to relate the tables.
+### View
 
-Tables:
-- 'games' tracks all matches and scores made by both the winner team and the opponent team (using team_id as the identifier).
-- 'teams' lists all teams that played in the matches.
+You can view the initial_tables_creation.sql file to see how the database was created.
 
-### View: <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/initial_state_of_DB.sql"> initial_tables_creation.sql
-  </a>
+View: [initial_tables_creation.sql](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/initial_state_of_DB.sql)
 
 ## Data Conceptual Model (DCM)
+
+The FIFA World Cup Data Conceptual Model (DCM) is shown in the image below.
+
 ![worldcup diagram](https://github.com/z-bj/fifa_world_cup_DB/blob/master/assets_fwc_db/FIFA_WORLD_CUP_DCM_DB.jpg)
 
-## PostgreSQL data querying through bash script. 
+## PostgreSQL Data Querying Through Bash Script
 
-The script reads games.csv and calls the DB to insert all its content automatically in the waiting table.
-
-Took constraints into consideration when creating the Bash script to insert all winner and opponent teams individually into 'teams' and then into 'games' based on the team_id created.
-
-### <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/insert_data.sh"> insert_data.sh
-  </a>
-  
-Finished by writing a Bash script that utilises SQL to query the database and obtain useful values.
-
-### <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/queries.sh"> queries.sh
-  </a>
-
-DB dump (post insertion): <a href="https://github.com/z-bj/fifa_world_cup_DB/blob/master/worldcup.sql"> worldcup.sql </a>
+The [insert_data.sh](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/insert_data.sh) script reads the games.csv file and inserts all its content automatically into the waiting table by calling the database. The Bash script inserts all winning and opponent teams individually into the 'teams' table and then into the 'games' table based on the team_id created.
 
 
+
+The [queries.sh](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/queries.sh) script utilizes SQL to query the database and obtain useful values.
+
+## Resources
+
+A [DB dump](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/worldcup.sql) (post-insertion) is available in the worldcup.sql file.
+
+
+## Technologies Used
+
+-   Bash
+-   SQL
+-   PostgreSQL
 
 <img src="https://github.com/z-bj/fifa_world_cup_DB/blob/master/assets_fwc_db/headingparrot.gif" width="36"> 
-
-
-
