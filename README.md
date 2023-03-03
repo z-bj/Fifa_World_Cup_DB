@@ -53,7 +53,7 @@ Overall, the script is a useful tool for automating the process of inserting dat
 
 ## Resources
 
-A [DB dump](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/worldcup.sql) (post-insertion) is available in the worldcup.sql file.
+To see the job done, a [DB dump](https://github.com/z-bj/Fifa_World_Cup_DB/blob/master/worldcup.sql) is available in the worldcup.sql file.
 
 
 <img src="https://github.com/z-bj/fifa_world_cup_DB/blob/master/assets_fwc_db/headingparrot.gif" width="36"> 
